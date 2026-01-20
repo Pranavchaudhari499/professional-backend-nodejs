@@ -46,7 +46,7 @@ router.route("/avatar").patch(verifyJWT,upload.single("avatar"), updateUserAvata
 router.route("/cover-image")
 .patch(
     verifyJWT,upload
-    .single("/coverImage"), 
+    .single("coverImage"), 
     updateUsercoverImage
 )
 
